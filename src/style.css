@@ -1,4 +1,12 @@
+@font-face {
+  font-family: 'LiberationSans';
+  src: url('./LiberationSans-BoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-size: 20px;
+}
+
 .hello {
   color: pink;
+  font-family: 'LiberationSans' !important;
   background: url('./logo.png');
 }
