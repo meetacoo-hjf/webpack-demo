@@ -8,6 +8,9 @@ module.exports = {
     print: './src/print.js',
   },
   devtool: 'inline-source-map',
+  devServer: {
+    static: './dist'
+  },
   plugins: [
     new HtmlWebpackPlugin({
       title: "Development"
@@ -18,4 +21,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     clean: true
   },
+  optimization: {
+    runtimeChunk: 'single' // 本示例中单个 HTML 页面有多个入口，所以添加了 optimization.runtimeChunk: 'single' 配置
+  }
 };
