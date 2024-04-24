@@ -1,5 +1,5 @@
 const printMe = () => {
-  console.log('I get called from print.js!');
+  conosle.log('I get called from print.js!');
 }
 
 export default printMe;
