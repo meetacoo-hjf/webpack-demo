@@ -19,7 +19,8 @@ module.exports = {
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    clean: true
+    clean: true,
+    publicPath: '/'
   },
   optimization: {
     runtimeChunk: 'single' // 本示例中单个 HTML 页面有多个入口，所以添加了 optimization.runtimeChunk: 'single' 配置
